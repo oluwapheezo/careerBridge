@@ -1,0 +1,297 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="robots" content="noindex, nofollow">
+
+    <title>Admin Dashboard | CareerBridge</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="CSS/admin.css">
+</head>
+
+<body>
+
+    <div class="admin-layout">
+
+        <!-- SIDEBAR -->
+        <aside class="admin-sidebar">
+
+            <a href="index.html" class="brand">
+                <span class="brand-icon">C</span>
+                <span>Career<span class="brand-highlight">Bridge</span></span>
+            </a>
+
+            <p class="sidebar-label">MAIN MENU</p>
+
+            <nav class="admin-nav">
+                <a href="#overview" class="admin-nav-link active">
+                    <span>▦</span> Overview
+                </a>
+
+                <a href="#applications" class="admin-nav-link">
+                    <span>▤</span> Applications
+                </a>
+
+                <a href="#settings" class="admin-nav-link">
+                    <span>⚙</span> Settings
+                </a>
+            </nav>
+
+            <div class="sidebar-bottom">
+                <a href="index.html">← Back to Website</a>
+            </div>
+
+        </aside>
+
+
+        <!-- MAIN DASHBOARD -->
+        <main class="admin-main">
+
+            <header class="admin-header">
+                <div>
+                    <h1>Dashboard Overview</h1>
+                    <p>Welcome to CareerBridge administration.</p>
+                </div>
+
+                <div class="admin-profile">
+                    <span class="profile-avatar">A</span>
+                    <div>
+                        <strong>Administrator</strong>
+                        <small>Dashboard preview</small>
+                    </div>
+                </div>
+            </header>
+
+
+            <!-- DASHBOARD CONTENT -->
+            <section class="dashboard-content" id="overview">
+
+                <div class="dashboard-heading">
+                    <div>
+                        <h2>Overview</h2>
+                        <p>Monitor your recruitment activity.</p>
+                    </div>
+                </div>
+
+                <!-- STATISTICS -->
+                <div class="stats-grid">
+
+                    <div class="stat-card">
+                        <span>Total Applications</span>
+                        <h3 id="total-applications">0</h3>
+                        <small>Sample dashboard data</small>
+                    </div>
+
+                    <div class="stat-card">
+                        <span>Pending Review</span>
+                        <h3 id="pending-applications">0</h3>
+                        <small>Sample dashboard data</small>
+                    </div>
+
+                    <div class="stat-card">
+                        <span>Shortlisted</span>
+                        <h3 id="shortlisted-applications">0</h3>
+                        <small>Sample dashboard data</small>
+                    </div>
+
+                    <div class="stat-card">
+                        <span>Rejected</span>
+                        <h3 id="rejected-applications">0</h3>
+                        <small>Sample dashboard data</small>
+                    </div>
+
+                </div>
+                
+
+
+
+
+
+
+
+                <!-- RECENT APPLICATIONS -->
+                <section class="recent-applications" id="applications">
+
+                    <div class="table-heading">
+                        <div>
+                            <h2>Recent Applications</h2>
+                            <p>Latest candidate activity.</p>
+                        </div>
+
+                        <button class="btn btn-primary" id="export-applications">
+                            Export Applications
+                        </button>
+
+                        <button class="btn btn-primary" id="add-candidate">
+                                + Add Candidate
+                        </button>
+                    </div>
+                        
+                <div class="application-search">
+                     <input
+                     type="text"
+                        id="application-search"
+                        placeholder="Search by candidate or position...">
+                </div>
+                
+<div class="application-filters">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="Pending">Pending</button>
+    <button class="filter-btn" data-filter="Shortlisted">Shortlisted</button>
+    <button class="filter-btn" data-filter="Rejected">Rejected</button>
+</div>
+
+
+                    
+<div class="applications-table-wrapper">
+    <table class="applications-table">
+        <thead>
+            <tr>
+                <th>Candidate</th>
+                <th>Position</th>
+                <th>Date Applied</th>
+                <th>Status</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+
+        <tbody id="applications-list">
+        </tbody>
+    </table>
+</div>
+
+
+                </section>
+
+            </section>
+            
+<!-- Candidate Details Modal -->
+<div class="candidate-modal" id="add-candidate-modal">
+    <div class="candidate-modal-content">
+        <button class="modal-close" id="add-candidate-close">&times;</button>
+
+        <h2>Add New Candidate</h2>
+
+        <form id="add-candidate-form">
+            <label for="new-candidate-name">Candidate Name</label>
+            <input type="text" id="new-candidate-name" required>
+
+            <label for="new-candidate-position">Position</label>
+            <input type="text" id="new-candidate-position" required>
+
+            <label for="new-candidate-date">Date Applied</label>
+            <input type="date" id="new-candidate-date" required>
+
+            <label for="new-candidate-status">Status</label>
+            <select id="new-candidate-status">
+                <option value="Pending">Pending</option>
+                <option value="Shortlisted">Shortlisted</option>
+                <option value="Rejected">Rejected</option>
+            </select>
+
+                <label for="new-candidate-cv">Upload CV</label>
+                <input
+                    type="file"
+                    id="new-candidate-cv"
+                    accept=".pdf,.doc,.docx"
+            >
+            
+            <button type="submit" class="btn btn-primary">
+                Save Candidate
+            </button>
+        </form>
+    </div>
+</div>
+<div class="candidate-modal" id="edit-candidate-modal">
+    <div class="candidate-modal-content">
+        <button class="modal-close" id="edit-candidate-close">&times;</button>
+
+        <h2>Edit Candidate</h2>
+
+        <form id="edit-candidate-form">
+            <label for="edit-candidate-name">Candidate Name</label>
+            <input type="text" id="edit-candidate-name" required>
+
+            <label for="edit-candidate-position">Position</label>
+            <input type="text" id="edit-candidate-position" required>
+
+            <label for="edit-candidate-date">Date Applied</label>
+            <input type="date" id="edit-candidate-date" required>
+
+            <label for="edit-candidate-status">Status</label>
+            <select id="edit-candidate-status">
+                <option value="Pending">Pending</option>
+                <option value="Shortlisted">Shortlisted</option>
+                <option value="Rejected">Rejected</option>
+            </select>
+            <label for="edit-candidate-cv">Replace CV (optional)</label>
+                <input
+                        type="file"
+                        id="edit-candidate-cv"
+                        accept=".pdf,.doc,.docx"
+                >
+
+            <button type="submit" class="btn btn-primary">
+                Update Candidate
+            </button>
+        </form>
+    </div>
+</div>
+<div class="candidate-modal" id="candidate-modal">
+    <div class="candidate-modal-content">
+        <button class="candidate-modal-close" id="candidate-modal-close" type="button">&times;</button>
+
+        <h2>Candidate Details</h2>
+        <p class="modal-subtitle">Application information</p>
+
+        <div class="candidate-detail">
+            <span>Full Name</span>
+            <strong id="candidate-name"></strong>
+        </div>
+
+        <div class="candidate-detail">
+            <span>Position</span>
+            <strong id="candidate-position"></strong>
+        </div>
+
+        <div class="candidate-detail">
+            <span>Date Applied</span>
+            <strong id="candidate-date"></strong>
+        </div>
+
+            <div class="candidate-cv-section">
+                <h3>Candidate CV</h3>
+                <div id="candidate-cv">
+                No CV uploaded
+        </div>
+            </div>
+        </div>
+
+        <div class="candidate-detail">
+            <span>Application Status</span>
+            
+<select id="candidate-status-select" class="candidate-status-select">
+    <option value="Pending">Pending</option>
+    <option value="Shortlisted">Shortlisted</option>
+    <option value="Rejected">Rejected</option>
+</select>
+
+        </div>
+    </div>
+</div>
+
+        </main>
+
+    </div>
+<script src="JS/admin.js"></script>
+</body>
+</html>

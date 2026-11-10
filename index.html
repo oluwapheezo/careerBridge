@@ -1,0 +1,513 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CareerBridge helps job seekers discover career opportunities and connect with employers.">
+    <title>CareerBridge | Find Your Next Opportunity</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+
+    <div id="app">
+        
+<div id="app">
+
+    <!-- HEADER -->
+    <header class="site-header">
+        <div class="container navbar">
+
+            <a href="#" class="brand">
+                <span class="brand-icon">C</span>
+                <span>Career<span class="brand-highlight">Bridge</span></span>
+            </a>
+
+            <nav class="nav-links" id="nav-links">
+                <a href="#home" class="active">Home</a>
+                <a href="#jobs">Find Jobs</a>
+                <a href="#about">About Us</a>
+                <a href="#resources">Career Advice</a>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="#jobs" class="login-link">Explore Jobs</a>
+                <a href="#jobs" class="btn btn-primary">Find Opportunities</a>
+            </div>
+
+            <button class="menu-toggle" id="menu-toggle"
+                aria-label="Open navigation menu"
+                aria-expanded="false">
+                ☰
+            </button>
+
+        </div>
+    </header>
+
+
+    <!-- HERO SECTION -->
+    <main>
+        <section class="hero" id="home">
+            <div class="container hero-content">
+
+                <div class="hero-text">
+                    <span class="hero-label">
+                        YOUR CAREER. YOUR FUTURE.
+                    </span>
+
+                    <h1>
+                        Find the work
+                        <span>that moves you forward.</span>
+                    </h1>
+
+                    <p>
+                        Discover exciting opportunities, connect with
+                        employers, and take the next step in your career
+                        journey with CareerBridge.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="#jobs" class="btn btn-primary">
+                            Explore Opportunities →
+                        </a>
+
+                        <a href="#about" class="btn btn-outline">
+                            Learn More
+                        </a>
+                    </div>
+
+                    <div class="hero-trust">
+                        <span>✓ Easy job discovery</span>
+                        <span>✓ Career opportunities</span>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="hero-image-placeholder">
+                        <img src="/images/top-courses-for-advancing-your-career-in-2024.png" alt="hero-image">
+                        
+                    </div>
+
+                    <div class="floating-card">
+                        <span class="floating-icon">↗</span>
+                        <div>
+                            <strong>Your next chapter</strong>
+                            <small>Starts with one opportunity</small>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        
+<!-- JOB SEARCH SECTION -->
+<section class="job-search-section">
+    <div class="container">
+
+        <form class="job-search-form" id="job-search-form">
+
+            <div class="search-field">
+                <label for="job-keyword">What job are you looking for?</label>
+                <input
+                    type="text"
+                    id="job-keyword"
+                    placeholder="Job title or keyword"
+                >
+            </div>
+
+            <div class="search-field">
+                <label for="job-location">Where?</label>
+                <input
+                    type="text"
+                    id="job-location"
+                    placeholder="City or location"
+                >
+            </div>
+
+            <button type="submit" class="btn btn-primary">
+                Search Jobs
+            </button>
+
+        </form>
+
+    </div>
+</section>
+
+<!-- FEATURED JOBS SECTION -->
+<section class="section jobs-section" id="jobs">
+    <div class="container">
+
+        <div class="section-heading">
+            <span class="hero-label">EXPLORE OPPORTUNITIES</span>
+            <h2>Featured job opportunities</h2>
+            <p>Discover opportunities that match your skills, interests and career goals.</p>
+        </div>
+
+        <div class="jobs-grid">
+
+            <article class="job-card"
+            data-description="We are looking for a creative Frontend Developer to build responsive and user-friendly web experiences. Applicants should understand HTML, CSS and JavaScript."
+                data-title="Frontend Developer"
+                data-company="BrightTech Solutions"
+                data-location="Remote">
+                <span class="job-type">Full-time</span>
+                <h3>Frontend Developer</h3>
+                <p class="job-company">BrightTech Solutions</p>
+                <div class="job-details">
+                    <span>📍 Remote</span>
+                    <span>💰 $65,000/year</span>
+                </div>
+                <a href="#" class="job-link">View Opportunity →</a>
+            
+            </article>
+
+            <article class="job-card"
+            data-description="We are seeking a creative UI/UX Designer to design intuitive digital experiences, create wireframes and improve user journeys."
+                data-title="UI/UX Designer"
+                data-company="Creative Pixel Studio"
+                data-location="London UK">
+                <span class="job-type">Full-time</span>
+                <h3>UI/UX Designer</h3>
+                <p class="job-company">Creative Pixel Studio</p>
+                <div class="job-details">
+                    <span>📍 London, UK</span>
+                    <span>💰 £38,000/year</span>
+                </div>
+                <a href="#" class="job-link">View Opportunity →</a>
+            </article>
+
+            <article class="job-card"
+            data-description="Join our customer support team to assist customers, resolve enquiries and provide excellent service through digital communication channels."
+                data-title="Customer Support Assistant"
+                data-company="ConnectPro"
+                data-location="Remote">
+                <span class="job-type">Part-time</span>
+                <h3>Customer Support Assistant</h3>
+                <p class="job-company">ConnectPro</p>
+                <div class="job-details">
+                    <span>📍 Remote</span>
+                    <span>💰 $22/hour</span>
+                </div>
+                <a href="#" class="job-link">View Opportunity →</a>
+            </article>
+
+            
+
+
+
+
+
+
+
+        </div>
+        
+            <p id="job-search-feedback" aria-live="polite"></p>
+
+    </div>
+</section>
+
+<!-- ABOUT US SECTION -->
+<section class="section about-section" id="about">
+    <div class="container about-content">
+
+        <div class="about-visual">
+            <div class="about-card">
+                <span class="about-icon">✦</span>
+                <h3>Building better career connections</h3>
+                <p>Connecting ambition with opportunity.</p>
+            </div>
+        </div>
+
+        <div class="about-text">
+            <span class="hero-label">ABOUT CAREERBRIDGE</span>
+
+            <h2>Helping you take the next step in your career.</h2>
+
+            <p>
+                At CareerBridge, we believe finding the right opportunity
+                should be a simpler and more rewarding experience.
+            </p>
+
+            <p>
+                Our platform is designed to help job seekers explore
+                opportunities, discover career resources and move
+                confidently towards their professional goals.
+            </p>
+
+            <a href="#jobs" class="btn btn-primary">
+                Explore Opportunities →
+            </a>
+        </div>
+
+    </div>
+</section>
+
+<!-- CAREER ADVICE SECTION -->
+<section class="section resources-section" id="resources">
+    <div class="container">
+
+        <div class="section-heading">
+            <span class="hero-label">GROW YOUR CAREER</span>
+            <h2>Resources to help you move forward</h2>
+            <p>Practical guidance to help you prepare, improve and succeed in your career journey.</p>
+        </div>
+
+        <div class="resources-grid">
+
+            <article class="resource-card">
+                <div class="resource-icon">📄</div>
+                <span class="resource-category">CAREER GUIDE</span>
+                <h3>Build a stronger CV</h3>
+                <p>Learn how to present your skills, experience and achievements clearly.</p>
+                <a href="#" class="resource-link">Read More →</a>
+            </article>
+
+            <article class="resource-card">
+                <div class="resource-icon">🎯</div>
+                <span class="resource-category">INTERVIEW TIPS</span>
+                <h3>Prepare for interviews</h3>
+                <p>Build confidence and learn how to approach common interview questions.</p>
+                <a href="#" class="resource-link">Read More →</a>
+            </article>
+
+            <article class="resource-card">
+                <div class="resource-icon">🚀</div>
+                <span class="resource-category">CAREER GROWTH</span>
+                <h3>Develop valuable skills</h3>
+                <p>Discover ways to strengthen your professional skills and stay competitive.</p>
+                <a href="#" class="resource-link">Read More →</a>
+            </article>
+
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section class="section contact-section" id="contact">
+    <div class="container contact-content">
+
+        <div class="contact-info">
+            <span class="hero-label">GET IN TOUCH</span>
+            <h2>Let's help you move forward.</h2>
+            <p>
+                Have a question or need assistance?
+                Send us a message and our team will be happy to help.
+            </p>
+
+            <div class="contact-detail">
+                <span>✉</span>
+                <div>
+                    <strong>Email us</strong>
+                    <p>hello@careerbridge.example</p>
+                </div>
+            </div>
+
+            <div class="contact-detail">
+                <span>◎</span>
+                <div>
+                    <strong>Our commitment</strong>
+                    <p>Helping people discover better opportunities.</p>
+                </div>
+            </div>
+        </div>
+
+        <form class="contact-form" id="contact-form">
+            <div class="form-group">
+                <label for="contact-name">Full name</label>
+                <input type="text" id="contact-name"
+                    placeholder="Enter your name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="contact-email">Email address</label>
+                <input type="email" id="contact-email"
+                    placeholder="Enter your email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="contact-message">Your message</label>
+                <textarea id="contact-message" rows="5"
+                    placeholder="How can we help?" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">
+                Send Message →
+            </button>
+
+            <p id="contact-feedback" aria-live="polite"></p>
+        </form>
+
+    </div>
+</section>
+
+<!-- JOB DETAILS MODAL -->
+<div class="job-modal" id="job-modal" aria-hidden="true">
+    <div class="job-modal-content">
+
+        <button class="modal-close" id="modal-close"
+            aria-label="Close job details">&times;</button>
+
+        <span class="job-type" id="modal-job-type">Full-time</span>
+
+        <h2 id="modal-job-title">Job Title</h2>
+
+        <p id="modal-job-company">Company Name</p>
+
+        <div class="modal-job-details">
+            <p id="modal-job-location">Location</p>
+            <p id="modal-job-salary">Salary</p>
+        </div>
+
+        <div class="modal-description">
+            <h3>Job Description</h3>
+            <p id="modal-job-description"></p>
+        </div>
+
+        <button class="btn btn-primary" id="modal-apply">
+            Apply for this Position →
+        </button>
+
+    </div>
+</div>
+
+
+<!-- JOB APPLICATION MODAL -->
+<div class="application-modal" id="application-modal" aria-hidden="true">
+    <div class="application-modal-content">
+
+        <button class="modal-close" id="application-close"
+            aria-label="Close application form">&times;</button>
+
+        <span class="hero-label">CAREER OPPORTUNITY</span>
+
+        <h2>Apply for this position</h2>
+        <p class="application-intro">
+            Complete the form below to submit your application.
+        </p>
+
+        <form
+            id="application-form"
+            name="career-application"
+            method="POST"
+            data-netlify="true"
+            enctype="multipart/form-data">
+
+            <div class="form-group">
+                <label for="applicant-name">Full name</label>
+                <input type="text" id="applicant-name"
+                    name="name" placeholder="Your full name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="applicant-email">Email address</label>
+                <input type="email" id="applicant-email"
+                    name="email" placeholder="Your email address" required>
+            </div>
+
+            <div class="form-group">
+                <label for="applicant-phone">Phone number</label>
+                <input type="tel" id="applicant-phone"
+                    name="phone" placeholder="Your phone number" required>
+            </div>
+
+            <div class="form-group">
+                <label for="applicant-cv">Upload your CV</label>
+                <input type="file" id="applicant-cv"
+                    name="cv" accept=".pdf,.doc,.docx" required>
+            </div>
+            <input type="hidden" name="form-name" value="career-application">
+
+            <input type="hidden" id="application-job" name="job">
+
+            <button type="submit" class="btn btn-primary">
+                Submit Application →
+            </button>
+
+            <p id="application-feedback" aria-live="polite"></p>
+
+        </form>
+    </div>
+</div>
+
+
+
+    </main>
+    
+<!-- FOOTER -->
+<footer class="site-footer">
+    <div class="container">
+
+        <div class="footer-content">
+
+            <div class="footer-brand">
+                <a href="#home" class="brand">
+                    <span class="brand-icon">C</span>
+                    <span>Career<span class="brand-highlight">Bridge</span></span>
+                </a>
+
+                <p>
+                    Connecting ambition with opportunity.
+                    Your next career chapter starts here.
+                </p>
+            </div>
+
+            <div class="footer-links">
+                <h3>Explore</h3>
+                <a href="#home">Home</a>
+                <a href="#jobs">Find Jobs</a>
+                <a href="#about">About Us</a>
+            </div>
+
+            <div class="footer-links">
+                <h3>Resources</h3>
+                <a href="#resources">Career Advice</a>
+                <a href="#contact">Contact Us</a>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 CareerBridge. All rights reserved.</p>
+            <a href="#home">Back to top ↑</a>
+        </div>
+
+    </div>
+</footer>
+
+
+</div>
+
+    </div>
+
+    <!-- JavaScript -->
+    <script src="JS/script.js"></script>
+
+    
+<!-- NETLIFY FORM DETECTION -->
+<form
+    name="career-application"
+    data-netlify="true"
+    enctype="multipart/form-data"
+    hidden>
+
+    <input type="hidden" name="form-name" value="career-application">
+
+    <input type="text" name="name">
+    <input type="email" name="email">
+    <input type="tel" name="phone">
+    <input type="text" name="job">
+    <input type="file" name="cv">
+
+</form>
+
+
+</body>
+</html>
