@@ -83,3 +83,11 @@ No additional packages or build tools are required.
 - Implement administrator authentication.
 - Connect live applications directly to the admin dashboard.
 - Add advanced recruitment and candidate management features.
+
+## Screenshots
+
+### Homepage
+![CareerBridge Homepage](images/careerbridge-homepage.png)
+
+### Admin Dashboard
+![CareerBridge Admin Dashboard](images/careerbridge-admin.png)
